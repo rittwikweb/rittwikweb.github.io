@@ -29,6 +29,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://rittwikweb.github.io/#person",
     "name": "Rittwik Hajra",
     "url": "https://rittwikweb.github.io/",
     "image": "https://rittwikweb.github.io/photo.jpg?v=2026-11-20",
@@ -72,6 +73,21 @@
       "https://www.linkedin.com/in/rittwik-hajra-a41719282",
       "https://bsky.app/profile/tartarus75.bsky.social"
     ]
+  }
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "https://rittwikweb.github.io/",
+    "name": "Rittwik Hajra",
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://rittwikweb.github.io/photo.jpg?v=2026-11-20",
+      "width": 900,
+      "height": 900
+    },
+    "mainEntity": { "@id": "https://rittwikweb.github.io/#person" }
   }
 </script>
 
@@ -628,7 +644,7 @@
             </div>
             <!-- EDIT: the profile picture is photo.jpg next to this file (square, about 900 x 900).
                  WHEN YOU CHANGE THE PHOTO: upload the new photo.jpg, then change the date after ?v=
-                 in all THREE places it appears (here, og:image and "image" near the top),
+                 in all FOUR places it appears (here, og:image, "image" and "primaryImageOfPage" near the top),
                  for example ?v=2026-11-20 to the day you change it. -->
             <div class="portrait no-photo">
               <img src="photo.jpg?v=2026-11-20" alt="Portrait of Rittwik Hajra" width="900" height="900">
