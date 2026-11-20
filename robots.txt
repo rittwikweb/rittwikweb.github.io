@@ -1,0 +1,13 @@
+# Keep the cover photo and the Miscellaneous pictures (paintings, theatre) out of Google,
+# so search shows only the profile photo.
+User-agent: Googlebot
+Disallow: /cover.jpg
+Disallow: /images/
+
+User-agent: Googlebot-Image
+Disallow: /cover.jpg
+Disallow: /images/
+
+# Everything else may be crawled.
+User-agent: *
+Allow: /
